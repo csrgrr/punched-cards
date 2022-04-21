@@ -1,0 +1,107 @@
+*{ 
+    font-family: consolas;
+}
+body{
+    background-color:rgb(255, 232, 129);
+}
+
+h1{
+    font-size: 400%;
+    font-weight: 500%;
+    padding: 0;
+    margin: 0 0 0 0;
+}
+
+h2{
+    font-size:200%;
+    font-weight: 500%;
+
+}
+
+.tarjeta {
+    background-color: rgb(255, 232, 129);
+    clip-path:polygon(
+        2px 150px, 
+        150px 2px, 
+        calc(100% - 2px) 2px, 
+        calc(100% - 2px) calc(100% - 36px), 
+        calc(100% - 36px) calc(100% - 36px), 
+        2px calc(100% - 36px), 
+        2px 36px
+        );
+        width: 80%;
+        margin: auto;
+        padding: 2em 0 5em 0;
+
+        border: 5em;
+        border-color: solid black;
+        box-shadow: 5px 10px;
+}
+.tarjeta-wrap {
+    width: 100%;
+    margin: auto;
+    padding: 2em 0 5em 0;
+    filter: drop-shadow(-2px 10px 10px rgba(50, 50, 0));
+  }
+
+.titulo {
+    padding-left: 5em;
+}
+
+
+.interior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 50%;
+    margin: 0 7em 0 5em;
+}
+
+.cuadrados li {
+    list-style: none;
+    background-color: black;
+    width: 1em;
+    height: 2em;
+    margin-top: 6em;
+}
+.cuadrados li:first-of-type {
+
+    margin-top: 0;
+}
+
+
+#descripcion{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 2em 2em 2em 2em;
+}
+
+.linea {
+    background-color: black;
+    width: 1em;
+    height: 25em;
+    margin: 2em 0 2em 0;
+}
+
+#lProjects.linea{
+    margin: 2em 0 2em 3em;
+}
+
+#perfil{
+    font-size: 55%;
+    margin: 4em 2em 2em 4em;
+    
+}
+
+#projects{
+    background-color: red;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#projects h2{
+    margin-right: 2em;
+}
