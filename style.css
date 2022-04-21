@@ -1,12 +1,23 @@
+@font-face {
+    font-family: Modeseven;
+    src: url(Modeseven-L3n5.ttf);
+  }
+
 *{ 
-    font-family: consolas;
+    font-family: Modeseven;
 }
+
+pre{
+    font-size: 55%;
+    font-family:'Courier New', Courier, monospace;
+}
+
 body{
     background-color:rgb(255, 232, 129);
 }
 
 h1{
-    font-size: 400%;
+    font-size: 300%;
     font-weight: 500%;
     padding: 0;
     margin: 0 0 0 0;
@@ -31,17 +42,14 @@ h2{
         );
         width: 80%;
         margin: auto;
-        padding: 2em 0 5em 0;
-
-        border: 5em;
-        border-color: solid black;
-        box-shadow: 5px 10px;
+        padding: 2% 0 5% 0;
 }
 .tarjeta-wrap {
     width: 100%;
     margin: auto;
-    padding: 2em 0 5em 0;
+    padding: 2% 0 5% 0;
     filter: drop-shadow(-2px 10px 10px rgba(50, 50, 0));
+
   }
 
 .titulo {
@@ -55,7 +63,7 @@ h2{
     justify-content: space-between;
     box-sizing: border-box;
     height: 50%;
-    margin: 0 7em 0 5em;
+    margin:0 7% 0 5% ;
 }
 
 .cuadrados li {
@@ -90,18 +98,31 @@ h2{
 }
 
 #perfil{
-    font-size: 55%;
-    margin: 4em 2em 2em 4em;
-    
+    margin: 4em 2em 4em 4em;    
 }
 
-#projects{
-    background-color: red;
+.project{
     margin-left: 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-#projects h2{
+.project h2{
     margin-right: 2em;
+    width: 100%;
+}
+.project p{
+    margin-top: 1.7em;
+    width: 300%;
+}
+
+.skills{
+    margin-left: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: red;
+}
+.skill pre {
+    font-size: 0em;
 }
