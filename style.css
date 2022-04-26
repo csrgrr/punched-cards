@@ -25,9 +25,19 @@ h1{
 h2{
     font-size:2vw;
     font-weight: 50vw;
-
 }
 
+
+/*barra*/
+div.topnav{
+    margin-top: -2vw;
+    padding-bottom: 1.5vw;
+}
+div.topnav a{
+    font-size: 2vw;
+    padding-right: 1.5vw;
+
+}
 
 .tarjeta {
     background-color: rgb(255, 242, 184);
@@ -138,6 +148,9 @@ h2{
     width: 45vw;
 }
 
+.project p a{
+    text-decoration: underline;
+}
 
 /*skills*/
 
@@ -278,4 +291,19 @@ ul.redes li p#linkedln{
     text-align: end;
     padding-top: 1.5vw;
     padding-right: 1vw;
+}
+
+/*Punched card*/
+
+div#punchedCard pre{
+    line-height: .5vw;
+    text-align: center;
+}
+
+div#punchedCard p#punchedText {
+    width: 60vw;
+    font-size: 1.5vw;
+    text-align: justify;
+    padding-top: 1.5vw;
+    padding-left: 1vw;
 }
