@@ -7,8 +7,12 @@
     font-family: Modeseven;
 }
 
+p {
+    font-size: 1vw;
+}
+
 pre{
-    font-size: 55%;
+    font-size: .5vw;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -17,37 +21,39 @@ body{
 }
 
 h1{
-    font-size: 300%;
-    font-weight: 500%;
+    font-size: 3vw;
+    font-weight: 5vw;
     padding: 0;
     margin: 0 0 0 0;
 }
 
 h2{
-    font-size:200%;
-    font-weight: 500%;
+    font-size:2vw;
+    font-weight: 50vw;
 
 }
+
 
 .tarjeta {
-    background-color: rgb(255, 232, 129);
+    background-color: rgb(255, 242, 184);
     clip-path:polygon(
-        2px 150px, 
-        150px 2px, 
-        calc(100% - 2px) 2px, 
-        calc(100% - 2px) calc(100% - 36px), 
-        calc(100% - 36px) calc(100% - 36px), 
-        2px calc(100% - 36px), 
-        2px 36px
+        0.12vw 6vw, 
+        6vw 0.12vw, 
+        calc(100% - 0.12vw) 0.12vw, 
+        calc(100% - 0.12vw) calc(100% - 2.16vw), 
+        calc(100% -  2.16vw) calc(100% - 2.16vw), 
+        0.12vw calc(100% - 2.16vw), 
+        0.12vw 2.16vw
         );
-        width: 80%;
+        width: 80vw;
+        height: 30vw;
         margin: auto;
-        padding: 2% 0 5% 0;
+        padding: .5vw 0 5vw 0;
 }
 .tarjeta-wrap {
-    width: 100%;
+    width: 80vw;
     margin: auto;
-    padding: 2% 0 5% 0;
+    padding: .5vw 0 5vw 0;
     filter: drop-shadow(-2px 10px 10px rgba(50, 50, 0));
 
   }
@@ -62,67 +68,123 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     box-sizing: border-box;
-    height: 50%;
-    margin:0 7% 0 5% ;
+    height: 30vw;
+    width: 75vw;
+    margin:0 15vw 0 2vw ;
 }
 
+.cuadrados{
+    margin: 0;
+    padding: 0;
+}
 .cuadrados li {
     list-style: none;
     background-color: black;
-    width: 1em;
-    height: 2em;
-    margin-top: 6em;
+    width: .5vw;
+    height: 1vw;
+    margin: 6.5vw 0 0 2vw;
 }
 .cuadrados li:first-of-type {
 
-    margin-top: 0;
+    margin-top: 0vw;
 }
 
+/*about*/
 
 #descripcion{
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin: 2em 2em 2em 2em;
+    margin: 2vw 2vw 2vw 2vw;
 }
 
 .linea {
     background-color: black;
-    width: 1em;
-    height: 25em;
-    margin: 2em 0 2em 0;
-}
-
-#lProjects.linea{
-    margin: 2em 0 2em 3em;
+    width: 1vw;
+    height: 22vw;
+    margin: 2vw 0 2vw 0;
 }
 
 #perfil{
-    margin: 4em 2em 4em 4em;    
+    margin: 4vw 3vw 0vw 3vw;    
 }
 
-.project{
-    margin-left: 2em;
+/*projects*/
+
+#lProjects.linea{
+    background-color: black;
+    width: 0.5vw;
+    height: 22vw;
+    margin: 1vw 2vw 2vw 3vw;
+}
+
+.project {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: auto;
 }
+
 .project h2{
-    margin-right: 2em;
-    width: 100%;
+    font-size: 2vw;
+    box-sizing: border-box;
+    width: 10vw;
+    margin-right: 3vw;
 }
 .project p{
-    margin-top: 1.7em;
-    width: 300%;
+    font-size: 1.2vw;
+    box-sizing: border-box;
+    width: 45vw;
 }
 
-.skills{
-    margin-left: 2em;
+/*skills*/
+
+.puntuacion, #puntuacion2  {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    background-color: red;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 30vw;
+
+    padding: 0;
+
+    list-style: none;
+
 }
-.skill pre {
-    font-size: 0em;
+
+pre {
+    font-size: .4vw;
+}
+
+pre p{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-left: .2vw;
+}
+
+pre#icono {
+    margin:.5vw 0 0 .5vw;
+
+}
+
+.puntuacion li {
+    background-color: black;
+    width: 2.5vw;
+    height: 5vw;
+}
+
+#puntuacion2{
+    border-style: dashed;
+    height: 6vw;
+    border-width: .5vw;
+    border-color: solid black;
+    margin: 1vw 1vw 1vw 1vw;
+}
+#puntuacion2 li {
+    background-color: black;
+    width: 1.5vw;
+    height: 3vw;
+    margin: 1vw 0 0vw 1vw;
 }
