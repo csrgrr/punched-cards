@@ -11,11 +11,6 @@ p {
     font-size: 1vw;
 }
 
-pre{
-    font-size: .5vw;
-    font-family:'Courier New', Courier, monospace;
-}
-
 body{
     background-color:rgb(255, 232, 129);
 }
@@ -54,12 +49,12 @@ h2{
     width: 80vw;
     margin: auto;
     padding: .5vw 0 5vw 0;
-    filter: drop-shadow(-2px 10px 10px rgba(50, 50, 0));
+    filter: drop-shadow(-.2vw .7vw .7vw rgba(50, 50, 0));
 
   }
 
 .titulo {
-    padding-left: 5em;
+    padding-left: 10vw;
 }
 
 
@@ -106,7 +101,12 @@ h2{
 }
 
 #perfil{
-    margin: 4vw 3vw 0vw 3vw;    
+  
+    font-size: .5vw;
+    font-family:'Courier New', Courier, monospace;
+    margin: 2vw 3vw 0vw 3vw;
+    padding: 0vw;
+    line-height: .55vw;
 }
 
 /*projects*/
@@ -138,7 +138,20 @@ h2{
     width: 45vw;
 }
 
+
 /*skills*/
+
+.skillsWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10vw;
+    margin-top: -1vw;
+    margin-left: 2vw;
+}
+.skills{
+    margin-left: 2vw;
+}
 
 .puntuacion, #puntuacion2  {
     display: flex;
@@ -153,20 +166,40 @@ h2{
     list-style: none;
 
 }
+.puntuacion pre{
+    font-size: .4vw;
+    font-family:'Courier New', Courier, monospace;
+    padding: 0vw;
+
+}
 
 pre {
     font-size: .4vw;
+    line-height: .45vw;
 }
 
 pre p{
     padding-bottom: 0;
     margin-bottom: 0;
-    margin-left: .2vw;
+    margin-left: 2vw;
+    margin-top: 0;
 }
 
-pre#icono {
-    margin:.5vw 0 0 .5vw;
+p#js{
+    margin-left: 0vw;
+}
+p#java{
+    margin-left: 2.5vw;
+}
+p#sql{
+    margin-left: 2.5vw;
+}
 
+
+
+.puntuacion{
+    margin: 0;
+    padding: 0;
 }
 
 .puntuacion li {
@@ -187,4 +220,62 @@ pre#icono {
     width: 1.5vw;
     height: 3vw;
     margin: 1vw 0 0vw 1vw;
+}
+
+
+
+/*contact*/
+
+
+
+p.linea#lcontacto{
+    width: 60vw;
+    height: .5vw;
+}
+ul.redes {
+    
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-left: 5vw;
+    margin-bottom: -1vw;
+    margin-top: 3vw;
+}
+ul.redes li pre {
+    font-size: .4vw;
+    line-height: .5vw;
+    white-space: pre;
+}
+a:link{
+    color: black;
+    font-style: none;
+    text-decoration: none;
+    letter-spacing: 0;
+}
+a:visited{
+    color: black;
+    font-style: none;
+    text-decoration: none;
+}
+
+
+ul.redes li p {
+    margin: auto;
+}
+ul.redes li p#github {
+margin-left: 1.2vw;
+}
+ul.redes li p#linkedln{
+    margin-left: .6vw;
+    }
+    
+
+#mail {
+    font-size: 1.5vw;
+    text-align: end;
+    padding-top: 1.5vw;
+    padding-right: 1vw;
 }
