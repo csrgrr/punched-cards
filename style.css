@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }  
+
 @font-face {
     font-family: Modeseven;
     src: url(Modeseven-L3n5.ttf);
@@ -30,15 +34,19 @@ h2{
 
 /*barra*/
 div.topnav{
-    margin-top: -2vw;
-    padding-bottom: 1.5vw;
+    display: flex;
+    margin: 2vw 0vw 4vw 2vw;
+    padding: 0vw;
+    width:100vw;
+    height: 2vw;
 }
 div.topnav a{
-    font-size: 2vw;
-    padding-right: 1.5vw;
+    font-size: 2.5vw;
+    padding-right: 2.5vw;
 
 }
 
+/*tarjeta general*/
 .tarjeta {
     background-color: rgb(255, 242, 184);
     clip-path:polygon(
@@ -294,6 +302,9 @@ ul.redes li p#linkedln{
 }
 
 /*Punched card*/
+div#punchedCard {
+        padding-left: 7vw;
+}
 
 div#punchedCard pre{
     line-height: .5vw;
@@ -307,3 +318,99 @@ div#punchedCard p#punchedText {
     padding-top: 1.5vw;
     padding-left: 1vw;
 }
+
+/*Hello World*/
+.helloWorld {
+    width: 75vw;
+    height: 30vw;    
+    margin: -27vw 0vw 2vw -5vw;
+    display: flex;
+    flex-direction: row;
+}
+ul#perforacion {
+    list-style: none;
+    width: 0vw;
+    margin: 0 1vw 0 0;
+    padding: 0;
+    height: 30vw;
+
+
+}
+ul#perforacion li{
+    width: .7vw;
+    height: 1.4vw;
+    margin-bottom: 1.202vw;
+}
+
+#punched{
+    background-color: rgb(0, 0, 0);
+}
+
+/*Button*/
+
+
+/*Animacion intro*/
+  /*animaciones intro*/
+  
+  @keyframes myAnimation {
+    from {
+       opacity: 0;
+    }
+    to {
+       opacity: 1;
+    }
+ }
+ 
+#t1 {
+animation-name: myAnimation;
+animation-duration: 2s;
+animation-delay: 0s;
+opacity: 0;
+animation-fill-mode: forwards;
+}
+
+#t2 {
+animation-name: myAnimation;
+animation-duration: 2s;
+animation-delay: 1s;
+opacity: 0;
+animation-fill-mode: forwards;
+}
+
+#t3 {
+animation-name: myAnimation;
+animation-duration: 2s;
+animation-delay: 2s;
+opacity: 0;
+animation-fill-mode: forwards;
+}
+
+#t4 {
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    }
+    
+#t5 {
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    }
+
+
+/* transiciones hover*/
+  
+     #t1, #t2, #t3, #t4, #t5 {
+       
+        transition: transform .2s;
+     }
+     
+     #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
+        transform: scale(1.1);
+  
+        }
+ 
