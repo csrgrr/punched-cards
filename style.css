@@ -35,17 +35,32 @@ h2{
 /*barra*/
 div.topnav{
     display: flex;
-    margin: 2vw 0vw 4vw 2vw;
-    padding: 0vw;
+    margin: 2vw 0vw 8vw 2vw;
+    padding: 0vw 4vw 0 0;
     width:100vw;
     height: 2vw;
+
+ 
 }
-div.topnav a{
-    font-size: 2.5vw;
-    padding-right: 2.5vw;
+div.topnav a{ 
+
+        background-color: rgb(255, 242, 184);   
+        border-radius: 1vw;
+        border: none;
+        transition: .5s background-color;
+
+    font-size: 2vw;
+    margin-right: 2.5vw;
+    padding: 2vw 2vw 4vw 2vw;
+    text-decoration: underline;
+
+    
+}
+
+div.topnav a:hover {        
+    background-color: rgb(255, 221, 70);
 
 }
-
 /*tarjeta general*/
 .tarjeta {
     background-color: rgb(255, 242, 184);
@@ -96,6 +111,7 @@ div.topnav a{
     width: .5vw;
     height: 1vw;
     margin: 6.5vw 0 0 2vw;
+    
 }
 .cuadrados li:first-of-type {
 
@@ -292,6 +308,9 @@ margin-left: 1.2vw;
 ul.redes li p#linkedln{
     margin-left: .6vw;
     }
+ul.redes li p#behance{
+        margin-left: 2vw;
+        }
     
 
 #mail {
@@ -336,18 +355,36 @@ ul#perforacion {
 
 
 }
-ul#perforacion li{
+ul#perforacion li {
     width: .7vw;
     height: 1.4vw;
     margin-bottom: 1.202vw;
 }
 
-#punched{
-    background-color: rgb(0, 0, 0);
-}
 
 /*Button*/
 
+button {
+    
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: rgb(255, 242, 184);   
+    border-radius: 1vw;
+        width: 10vw;
+        height: 5vw;
+        margin: 3vw auto auto auto;
+        padding: 1.5vw 1vw 0vw 1vw;
+    border: none;
+    transition: .5s background-color;
+}
+
+button:hover {
+    background-color: rgb(255, 221, 70);
+  
+
+}
 
 /*Animacion intro*/
   /*animaciones intro*/
@@ -372,7 +409,7 @@ animation-fill-mode: forwards;
 #t2 {
 animation-name: myAnimation;
 animation-duration: 2s;
-animation-delay: 1s;
+animation-delay: .5s;
 opacity: 0;
 animation-fill-mode: forwards;
 }
@@ -380,7 +417,7 @@ animation-fill-mode: forwards;
 #t3 {
 animation-name: myAnimation;
 animation-duration: 2s;
-animation-delay: 2s;
+animation-delay: 1s;
 opacity: 0;
 animation-fill-mode: forwards;
 }
@@ -388,7 +425,7 @@ animation-fill-mode: forwards;
 #t4 {
     animation-name: myAnimation;
     animation-duration: 2s;
-    animation-delay: 3s;
+    animation-delay: 1.5s;
     opacity: 0;
     animation-fill-mode: forwards;
     }
@@ -413,4 +450,48 @@ animation-fill-mode: forwards;
         transform: scale(1.1);
   
         }
- 
+
+
+
+
+
+        @media only screen and (min-width:0px) and (max-width: 750px) {
+            .tarjeta {
+
+                    width: 80vw;
+                    height: 35vw;
+                    padding: .5vw 0 5vw 0;
+            }
+    p {
+                font-size: 1.3vw;
+            }
+
+            h1{
+                font-size: 4.2vw;
+                width: 35vw;
+                margin-top: .5vw;
+            }
+            
+            h2{
+                font-size:2.5vw;
+            }
+            .project h2{
+                font-size: 2vw;
+
+            }
+            .project p{
+                font-size: 1.2vw;
+
+            }
+            #t1, #t2, #t3, #t4, #t5 {
+       
+                transition: transform .2s;
+             }
+             
+             #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
+                transform: scale(1.2);
+          
+                }
+
+            
+        }
