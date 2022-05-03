@@ -611,5 +611,15 @@ div.topnav a:hover {
           
                 }
 
+
+
+                
+.linea {
+    background-color: black;
+    width: 2vw;
+    height: 29vw;
+    margin: 0vw 0 2vw 0;
+}
+
             
         }
