@@ -61,6 +61,23 @@ div.topnav a:hover {
     background-color: rgb(255, 221, 70);
 
 }
+
+/*TOPNAV PHONE*/
+.dropbtn {
+    padding: 0;
+    font-size:0;
+    width: 0;
+    height: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  div#myDropdown {
+      font-size: 0;
+  }
+/**/
+
+
 /*tarjeta general*/
 .tarjeta {
     background-color: rgb(255, 242, 184);
@@ -387,7 +404,6 @@ button:hover {
 }
 
 /*Animacion intro*/
-  /*animaciones intro*/
   
   @keyframes myAnimation {
     from {
@@ -455,7 +471,109 @@ animation-fill-mode: forwards;
 
 
 
-        @media only screen and (min-width:0px) and (max-width: 750px) {
+/*Button up*/
+#BtnUp {
+    display: none;
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    z-index: 99;
+    font-size: 2vw;
+    border: .3vw;
+    border-style: solid;
+    border-color: black;
+    outline: none;
+    cursor: pointer;
+    border-radius: .4vw;
+    
+        font-size: 2vw;
+        width: 5vw;
+        height: 5vw;
+    
+
+  }
+
+
+  
+  
+
+
+ @media only screen and (min-width:0px) and (max-width: 750px) {
+
+
+/*TOPNAV*/
+           
+div.topnav{
+    margin: 0;
+    padding: 0;
+    width:0;
+    height:0;
+ 
+}
+div.topnav a{ 
+
+        background-color: none;
+        border-radius: 0;
+        transition: .5s background-color;
+
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    
+}
+
+div.topnav a:hover {        
+    background-color: none;
+
+}
+
+/*TOPNAV PHONE*/
+.dropbtn {
+    padding-top: 1.2vw;
+    font-size: 5vw;
+    width: 10vw;
+    height: 10vw;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.3);
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+  div#myDropdown {
+    font-size: 5vw;
+}
+
+
+
+/**/
             .tarjeta {
 
                     width: 80vw;
@@ -495,3 +613,4 @@ animation-fill-mode: forwards;
 
             
         }
+

@@ -8,17 +8,25 @@
     <title>Porfolio</title>
 </head>
 <body>
-
-    <div class="topnav" id="myTopnav">
-        <a href="index.html#t1" class="active">ABOUT</a>
-        <a href="index.html#t2">PROJECTS</a>
-        <a href="index.html#t3">SKILLS</a>
-        <a href="index.html#t4">CONTACT</a>
-        <a href="PunchedCards.html">PUNCHED-CARDS</a>
-      </div>
-
-
-
+<!--Topnav computer-->
+<div class="topnav" id="myTopnav">
+    <a href="index.html#t1" class="active">ABOUT</a>
+    <a href="index.html#t2">PROJECTS</a>
+    <a href="index.html#t3">SKILLS</a>
+    <a href="index.html#t4">CONTACT</a>
+    <a href="PunchedCards.html">PUNCHED-CARDS</a>
+  </div>
+<!--Topnav smarthphone -->
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">☰</button>
+<div id="myDropdown" class="dropdown-content">
+    <a href="index.html#t1" class="active">ABOUT</a>
+    <a href="index.html#t2">PROJECTS</a>
+    <a href="index.html#t3">SKILLS</a>
+    <a href="index.html#t4">CONTACT</a>
+    <a href="PunchedCards.html">PUNCHED-CARDS</a>
+</div>
+</div>
 
     <!--TARJETA-->
 <div class="tarjeta-wrap">
@@ -402,6 +410,26 @@ function puncher(){
   
 }
 </script>
+
+<!--TOPNAV SMARTHPHONE-->
+<script>
+    function myFunction() {
+   document.getElementById("myDropdown").classList.toggle("show");
+ }
+ 
+ window.onclick = function(event) {
+   if (!event.target.matches('.dropbtn')) {
+     var dropdowns = document.getElementsByClassName("dropdown-content");
+     var i;
+     for (i = 0; i < dropdowns.length; i++) {
+       var openDropdown = dropdowns[i];
+       if (openDropdown.classList.contains('show')) {
+         openDropdown.classList.remove('show');
+       }
+     }
+   }
+ }
+ </script>
 
 </body>
 </html>

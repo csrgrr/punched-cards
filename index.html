@@ -8,7 +8,7 @@
     <title>Porfolio</title>
 </head>
 <body>
-
+<!--Topnav computer-->
     <div class="topnav" id="myTopnav">
         <a href="#t1" class="active">ABOUT</a>
         <a href="#t2">PROJECTS</a>
@@ -16,8 +16,17 @@
         <a href="#t4">CONTACT</a>
         <a href="PunchedCards.html">PUNCHED-CARDS</a>
       </div>
-
-
+<!--Topnav smarthphone -->
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">☰</button>
+    <div id="myDropdown" class="dropdown-content">
+        <a href="#t1" class="active">ABOUT</a>
+        <a href="#t2">PROJECTS</a>
+        <a href="#t3">SKILLS</a>
+        <a href="#t4">CONTACT</a>
+        <a href="PunchedCards.html">PUNCHED-CARDS</a>
+    </div>
+  </div>
 
 
     <!--TARJETAS-->
@@ -36,7 +45,7 @@
 
             <h1>CESAR GUERRA</h1>
             <h2>Academy intern</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, magni dolorum, neque accusantium architecto culpa reprehenderit unde velit voluptate, laborum eveniet nisi eum debitis illo recusandae consequatur similique itaque nulla.</p>
+            <p>Originally coming from Humanities, I am training in programming and web design. I am skilled and versatile designing, programming and researching all kinds of subjects, so none of them resist me over time. I speak Spanish, English and a little German, but you can also contact me in Portuguese and Italian.</p>
         
         </div> 
            
@@ -456,49 +465,51 @@
     </div>
 </div>
 
-<!--punched cards-->
-<div class="tarjeta-wrap">
-    <div class="tarjeta" id="t5">
 
-        <h2 class="titulo">WHY A PUNCHED CARD?</h2>
+
+<!--UP Button-->
+
+<button onclick="topFunction()" id="BtnUp" title="Go up">Up
+</button>
+
+<script>
+var mybutton = document.getElementById("BtnUp");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<!--TOPNAV SMARTHPHONE-->
+<script>
+       function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
     
-    <div class="interior">
-        <ul class="cuadrados">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-
-
-
-<div id="punchedCard">
-        <pre>
-     ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄  
- ███▀███████████▀█▀██████
- ████▄███████████▄█▄██████ 
- ████▄█▄██▄▄█▄█▄██████▄███ 
-██████ █ ████ █ ████ █████
- ████▀██▀█▀██████▀█▀██████ 
- █████████████████████████ 
- ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀ 
-       </pre>
-        <p id="punchedText">I see myself as an old school programmer. There’s something romantic in seeing those punched cards and the other stuff used not long ago to make computers work. This is an always changing field, but I sometimes fell that as we add layers and layers of abstraction to what we know about computers we are loosing the point, besides those who forget their past are doomed to repeat their mistakes and I wanted to represent that with the eternal beauty of the always recognizable punched cards that began the path that we continue to travel today.
-        </p>
-
-    </div>  
-       
-        <ul class="cuadrados">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
-
-    </div>
-</div>
-
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 
 </body>
 </html>
