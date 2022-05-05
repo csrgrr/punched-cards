@@ -32,7 +32,7 @@ h2{
 }
 
 
-/*barra*/
+/*TOPNAV computer*/
 div.topnav{
     display: flex;
     margin: 2vw 0vw 8vw 2vw;
@@ -62,7 +62,7 @@ div.topnav a:hover {
 
 }
 
-/*TOPNAV PHONE*/
+/*TOPNAV phone*/
 .dropbtn {
     padding: 0;
     font-size:0;
@@ -75,11 +75,11 @@ div.topnav a:hover {
   div#myDropdown {
       font-size: 0;
   }
-/**/
 
 
-/*tarjeta general*/
-.tarjeta {
+
+/*general card*/
+.card {
     background-color: rgb(255, 242, 184);
     clip-path:polygon(
         0.12vw 6vw, 
@@ -95,7 +95,7 @@ div.topnav a:hover {
         margin: auto;
         padding: .5vw 0 5vw 0;
 }
-.tarjeta-wrap {
+.card-wrap {
     width: 80vw;
     margin: auto;
     padding: .5vw 0 5vw 0;
@@ -103,12 +103,12 @@ div.topnav a:hover {
 
   }
 
-.titulo {
+.tittle {
     padding-left: 10vw;
 }
 
 
-.interior {
+.inside {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -118,11 +118,11 @@ div.topnav a:hover {
     margin:0 15vw 0 2vw ;
 }
 
-.cuadrados{
+.lateral-punches{
     margin: 0;
     padding: 0;
 }
-.cuadrados li {
+.lateral-punches li {
     list-style: none;
     background-color: black;
     width: .5vw;
@@ -130,28 +130,30 @@ div.topnav a:hover {
     margin: 6.5vw 0 0 2vw;
     
 }
-.cuadrados li:first-of-type {
+.lateral-punches li:first-of-type {
 
     margin-top: 0vw;
 }
 
+
+
 /*about*/
 
-#descripcion{
+#description{
     display: flex;
     flex-direction: column;
     text-align: right;
     margin: 2vw 2vw 2vw 2vw;
 }
 
-.linea {
+.line {
     background-color: black;
     width: 1vw;
     height: 22vw;
     margin: 2vw 0 2vw 0;
 }
 
-#perfil{
+#profile{
   
     font-size: .5vw;
     font-family:'Courier New', Courier, monospace;
@@ -160,9 +162,10 @@ div.topnav a:hover {
     line-height: .55vw;
 }
 
+
 /*projects*/
 
-#lProjects.linea{
+#lProjects.line{
     background-color: black;
     width: 0.5vw;
     height: 22vw;
@@ -193,6 +196,8 @@ div.topnav a:hover {
     text-decoration: underline;
 }
 
+
+
 /*skills*/
 
 .skillsWrap{
@@ -207,7 +212,7 @@ div.topnav a:hover {
     margin-left: 2vw;
 }
 
-.puntuacion, #puntuacion2  {
+.punctuation, #punctuation2  {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -220,7 +225,7 @@ div.topnav a:hover {
     list-style: none;
 
 }
-.puntuacion pre{
+.punctuation pre{
     font-size: .4vw;
     font-family:'Courier New', Courier, monospace;
     padding: 0vw;
@@ -251,25 +256,25 @@ p#sql{
 
 
 
-.puntuacion{
+.punctuation{
     margin: 0;
     padding: 0;
 }
 
-.puntuacion li {
+.punctuation li {
     background-color: black;
     width: 2.5vw;
     height: 5vw;
 }
 
-#puntuacion2{
+#punctuation2{
     border-style: dashed;
     height: 6vw;
     border-width: .5vw;
     border-color: solid black;
     margin: 1vw 1vw 1vw 1vw;
 }
-#puntuacion2 li {
+#punctuation2 li {
     background-color: black;
     width: 1.5vw;
     height: 3vw;
@@ -279,14 +284,11 @@ p#sql{
 
 
 /*contact*/
-
-
-
-p.linea#lcontacto{
+p.line#lcontact{
     width: 60vw;
     height: .5vw;
 }
-ul.redes {
+ul.social {
     
     padding: 0;
     list-style: none;
@@ -298,7 +300,7 @@ ul.redes {
     margin-bottom: -1vw;
     margin-top: 3vw;
 }
-ul.redes li pre {
+ul.social li pre {
     font-size: .4vw;
     line-height: .5vw;
     white-space: pre;
@@ -316,16 +318,16 @@ a:visited{
 }
 
 
-ul.redes li p {
+ul.social li p {
     margin: auto;
 }
-ul.redes li p#github {
+ul.social li p#github {
 margin-left: 1.2vw;
 }
-ul.redes li p#linkedln{
+ul.social li p#linkedln{
     margin-left: .6vw;
     }
-ul.redes li p#behance{
+ul.social li p#behance{
         margin-left: 2vw;
         }
     
@@ -336,6 +338,7 @@ ul.redes li p#behance{
     padding-top: 1.5vw;
     padding-right: 1vw;
 }
+
 
 /*Punched card*/
 div#punchedCard {
@@ -363,7 +366,7 @@ div#punchedCard p#punchedText {
     display: flex;
     flex-direction: row;
 }
-ul#perforacion {
+ul#punch {
     list-style: none;
     width: 0vw;
     margin: 0 1vw 0 0;
@@ -372,7 +375,7 @@ ul#perforacion {
 
 
 }
-ul#perforacion li {
+ul#punch li {
     width: .7vw;
     height: 1.4vw;
     margin-bottom: 1.202vw;
@@ -380,7 +383,6 @@ ul#perforacion li {
 
 
 /*Button*/
-
 button {
     
     font-size: 1vw;
@@ -573,48 +575,40 @@ div.topnav a:hover {
 
 
 
-/**/
-            .tarjeta {
+/*Final phone adjustment*/
+.card {
+        width: 80vw;
+        height: 35vw;
+        padding: .5vw 0 5vw 0;
+}
+p {
+    font-size: 1.3vw;
+}
+h1{
+    font-size: 4.2vw;
+    width: 35vw;
+    margin-top: .5vw;
+}
 
-                    width: 80vw;
-                    height: 35vw;
-                    padding: .5vw 0 5vw 0;
-            }
-    p {
-                font-size: 1.3vw;
-            }
+h2{
+    font-size:2.5vw;
+}
+.project h2{
+    font-size: 2vw;
+}
+.project p{
+    font-size: 1.2vw;
+}
+#t1, #t2, #t3, #t4, #t5 {
 
-            h1{
-                font-size: 4.2vw;
-                width: 35vw;
-                margin-top: .5vw;
-            }
-            
-            h2{
-                font-size:2.5vw;
-            }
-            .project h2{
-                font-size: 2vw;
-
-            }
-            .project p{
-                font-size: 1.2vw;
-
-            }
-            #t1, #t2, #t3, #t4, #t5 {
-       
-                transition: transform .2s;
-             }
-             
-             #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
-                transform: scale(1.2);
-          
-                }
-
-
-
-                
-.linea {
+    transition: transform .2s;
+ }
+ 
+ #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
+    transform: scale(1.2);
+}
+         
+.line {
     background-color: black;
     width: 2vw;
     height: 29vw;
