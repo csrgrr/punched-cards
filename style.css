@@ -11,8 +11,18 @@ html {
     font-family: Modeseven;
 }
 
+/*efecto agujero*/
+p, h1, h2, pre {
+background-color: rgb(174, 142, 0);
+color: transparent;
+text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+-webkit-background-clip: text;
+   -moz-background-clip: text;
+        background-clip: text;
+    }
 p {
     font-size: 1vw;
+
 }
 
 body{
@@ -32,13 +42,14 @@ h2{
 }
 
 
-/*TOPNAV computer*/
+/*barra*/
 div.topnav{
     display: flex;
     margin: 2vw 0vw 8vw 2vw;
     padding: 0vw 4vw 0 0;
     width:100vw;
     height: 2vw;
+
 
  
 }
@@ -54,6 +65,12 @@ div.topnav a{
     padding: 2vw 2vw 4vw 2vw;
     text-decoration: underline;
 
+    color: rgb(174, 142, 0);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+
+    
+
+
     
 }
 
@@ -62,7 +79,7 @@ div.topnav a:hover {
 
 }
 
-/*TOPNAV phone*/
+/*TOPNAV PHONE*/
 .dropbtn {
     padding: 0;
     font-size:0;
@@ -75,11 +92,11 @@ div.topnav a:hover {
   div#myDropdown {
       font-size: 0;
   }
+/**/
 
 
-
-/*general card*/
-.card {
+/*tarjeta general*/
+.tarjeta {
     background-color: rgb(255, 242, 184);
     clip-path:polygon(
         0.12vw 6vw, 
@@ -95,7 +112,7 @@ div.topnav a:hover {
         margin: auto;
         padding: .5vw 0 5vw 0;
 }
-.card-wrap {
+.tarjeta-wrap {
     width: 80vw;
     margin: auto;
     padding: .5vw 0 5vw 0;
@@ -103,12 +120,12 @@ div.topnav a:hover {
 
   }
 
-.tittle {
+.titulo {
     padding-left: 10vw;
 }
 
 
-.inside {
+.interior {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -118,42 +135,45 @@ div.topnav a:hover {
     margin:0 15vw 0 2vw ;
 }
 
-.lateral-punches{
+.cuadrados{
     margin: 0;
     padding: 0;
 }
-.lateral-punches li {
+.cuadrados li {
     list-style: none;
-    background-color: black;
     width: .5vw;
     height: 1vw;
     margin: 6.5vw 0 0 2vw;
+
+    box-shadow: inset -2px -2px 5px 1px rgb(255, 232, 129), 
+    inset 2px 2px 7px 1px rgb(0, 0, 0);
     
 }
-.lateral-punches li:first-of-type {
+.cuadrados li:first-of-type {
 
     margin-top: 0vw;
 }
 
-
-
 /*about*/
 
-#description{
+#descripcion{
     display: flex;
     flex-direction: column;
     text-align: right;
     margin: 2vw 2vw 2vw 2vw;
 }
 
-.line {
-    background-color: black;
+
+.linea {
+    box-shadow: inset -2px -2px 5px 1px rgb(255, 232, 129), 
+    inset 2px 2px 7px 1px rgb(0, 0, 0);
+     
     width: 1vw;
     height: 22vw;
     margin: 2vw 0 2vw 0;
 }
 
-#profile{
+#perfil{
   
     font-size: .5vw;
     font-family:'Courier New', Courier, monospace;
@@ -162,10 +182,9 @@ div.topnav a:hover {
     line-height: .55vw;
 }
 
-
 /*projects*/
 
-#lProjects.line{
+#lProjects.linea{
     background-color: black;
     width: 0.5vw;
     height: 22vw;
@@ -196,8 +215,6 @@ div.topnav a:hover {
     text-decoration: underline;
 }
 
-
-
 /*skills*/
 
 .skillsWrap{
@@ -212,7 +229,7 @@ div.topnav a:hover {
     margin-left: 2vw;
 }
 
-.punctuation, #punctuation2  {
+.puntuacion, #puntuacion2  {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -225,7 +242,7 @@ div.topnav a:hover {
     list-style: none;
 
 }
-.punctuation pre{
+.puntuacion pre{
     font-size: .4vw;
     font-family:'Courier New', Courier, monospace;
     padding: 0vw;
@@ -256,26 +273,28 @@ p#sql{
 
 
 
-.punctuation{
+.puntuacion{
     margin: 0;
     padding: 0;
 }
 
-.punctuation li {
-    background-color: black;
+.puntuacion li {
+    background-color: rgb(255, 232, 129) ;
+    box-shadow: inset -2px -2px 5px 1px rgb(255, 232, 129), 
+    inset 2px 2px 7px 1px rgb(0, 0, 0);
     width: 2.5vw;
     height: 5vw;
 }
 
-#punctuation2{
-    border-style: dashed;
+#puntuacion2{
     height: 6vw;
     border-width: .5vw;
-    border-color: solid black;
-    margin: 1vw 1vw 1vw 1vw;
+    margin: 2vw 1vw 1vw 1vw;
 }
-#punctuation2 li {
-    background-color: black;
+#puntuacion2 li {
+    background-color: rgb(255, 232, 129) ;
+    box-shadow: inset -2px -2px 5px 1px rgb(255, 232, 129), 
+    inset 2px 2px 7px 1px rgb(0, 0, 0);
     width: 1.5vw;
     height: 3vw;
     margin: 1vw 0 0vw 1vw;
@@ -284,11 +303,14 @@ p#sql{
 
 
 /*contact*/
-p.line#lcontact{
+
+
+
+p.linea#lcontacto{
     width: 60vw;
     height: .5vw;
 }
-ul.social {
+ul.redes {
     
     padding: 0;
     list-style: none;
@@ -300,7 +322,7 @@ ul.social {
     margin-bottom: -1vw;
     margin-top: 3vw;
 }
-ul.social li pre {
+ul.redes li pre {
     font-size: .4vw;
     line-height: .5vw;
     white-space: pre;
@@ -318,16 +340,16 @@ a:visited{
 }
 
 
-ul.social li p {
+ul.redes li p {
     margin: auto;
 }
-ul.social li p#github {
+ul.redes li p#github {
 margin-left: 1.2vw;
 }
-ul.social li p#linkedln{
+ul.redes li p#linkedln{
     margin-left: .6vw;
     }
-ul.social li p#behance{
+ul.redes li p#behance{
         margin-left: 2vw;
         }
     
@@ -338,7 +360,6 @@ ul.social li p#behance{
     padding-top: 1.5vw;
     padding-right: 1vw;
 }
-
 
 /*Punched card*/
 div#punchedCard {
@@ -358,6 +379,7 @@ div#punchedCard p#punchedText {
     padding-left: 1vw;
 }
 
+
 /*Hello World*/
 .helloWorld {
     width: 75vw;
@@ -366,7 +388,7 @@ div#punchedCard p#punchedText {
     display: flex;
     flex-direction: row;
 }
-ul#punch {
+ul#perforacion {
     list-style: none;
     width: 0vw;
     margin: 0 1vw 0 0;
@@ -375,7 +397,7 @@ ul#punch {
 
 
 }
-ul#punch li {
+ul#perforacion li {
     width: .7vw;
     height: 1.4vw;
     margin-bottom: 1.202vw;
@@ -383,6 +405,7 @@ ul#punch li {
 
 
 /*Button*/
+
 button {
     
     font-size: 1vw;
@@ -397,6 +420,13 @@ button {
         padding: 1.5vw 1vw 0vw 1vw;
     border: none;
     transition: .5s background-color;
+
+    
+    color: rgb(174, 142, 0);
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+
+
+    
 }
 
 button:hover {
@@ -483,7 +513,7 @@ animation-fill-mode: forwards;
     font-size: 2vw;
     border: .3vw;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(174, 142, 0);
     outline: none;
     cursor: pointer;
     border-radius: .4vw;
@@ -491,6 +521,12 @@ animation-fill-mode: forwards;
         font-size: 2vw;
         width: 5vw;
         height: 5vw;
+
+        color: rgb(174, 142, 0);
+        text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+        -webkit-background-clip: text;
+           -moz-background-clip: text;
+                background-clip: text;
     
 
   }
@@ -575,45 +611,44 @@ div.topnav a:hover {
 
 
 
-/*Final phone adjustment*/
-.card {
-        width: 80vw;
-        height: 35vw;
-        padding: .5vw 0 5vw 0;
-}
-p {
-    font-size: 1.3vw;
-}
-h1{
-    font-size: 4.2vw;
-    width: 35vw;
-    margin-top: .5vw;
-}
+/**/
+            .tarjeta {
 
-h2{
-    font-size:2.5vw;
-}
-.project h2{
-    font-size: 2vw;
-}
-.project p{
-    font-size: 1.2vw;
-}
-#t1, #t2, #t3, #t4, #t5 {
+                    width: 80vw;
+                    height: 35vw;
+                    padding: .5vw 0 5vw 0;
+            }
+    p {
+                font-size: 1.3vw;
+            }
 
-    transition: transform .2s;
- }
- 
- #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
-    transform: scale(1.2);
-}
-         
-.line {
-    background-color: black;
-    width: 2vw;
-    height: 29vw;
-    margin: 0vw 0 2vw 0;
-}
+            h1{
+                font-size: 4.2vw;
+                width: 35vw;
+                margin-top: .5vw;
+            }
+            
+            h2{
+                font-size:2.5vw;
+            }
+            .project h2{
+                font-size: 2vw;
+
+            }
+            .project p{
+                font-size: 1.2vw;
+
+            }
+            #t1, #t2, #t3, #t4, #t5 {
+       
+                transition: transform .2s;
+             }
+             
+             #t1:hover, #t2:hover, #t3:hover, #t4:hover, #t5:hover {
+                transform: scale(1.2);
+          
+                }
 
             
         }
+
