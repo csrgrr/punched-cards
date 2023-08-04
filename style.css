@@ -177,7 +177,6 @@ div.topnav a:hover {
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    margin-top: auto;
 }
 
 .project h2{
@@ -185,6 +184,7 @@ div.topnav a:hover {
     box-sizing: border-box;
     width: 10vw;
     margin-right: 3vw;
+    margin-top: .5em;
 }
 .project p{
     font-size: 1.2vw;
