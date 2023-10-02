@@ -211,11 +211,23 @@ div.topnav a:hover {
 .skills{
     margin-left: 8vw;
 }
+.skills h5{
+    margin-top: 0vw;
+}
+.frameworks{
+    border: dashed black .2vw;
+    padding: 1vw;
+    padding-bottom: 0;
+    margin-top: -1vw;
+}
 
-.frameworks li {
-    margin-bottom: 2.5vw;
-    margin-left: 0;
+.frameworks p{
+    margin-bottom: 2vw;
     font-size: 1vw;
+}
+
+.frameworks h5{
+    text-decoration: underline;
 }
 
 
