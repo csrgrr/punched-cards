@@ -184,7 +184,7 @@ div.topnav a:hover {
     box-sizing: border-box;
     width: 10vw;
     margin-right: 3vw;
-    margin-top: .5em;
+    margin-top: .5vw;
 }
 .project p{
     font-size: 1.2vw;
@@ -214,6 +214,8 @@ div.topnav a:hover {
 
 .frameworks li {
     margin-bottom: 2.5vw;
+    margin-left: 0;
+    font-size: 1vw;
 }
 
 
